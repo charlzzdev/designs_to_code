@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!-- design source: https://uidesigndaily.com/posts/sketch-add-new-modal-app-form-create-day-1077 -->
+  <div class="modal">
+    <button class="modal__close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C949C"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+      ESC
+    </button>
+    <h1 class="modal__title">Add a New Flow</h1>
+    <p class="modal__desc">Flows help you better manage your guides by grouping them.</p>
+    <form class="modal__form">
+      <label class="modal__label" for="flow_name">FLOW NAME</label>
+      <input class="modal__input modal__input--name" type="text" id="flow_name" placeholder="Name your flow">
+      <label class="modal__label" for="flow_delay">Flow Start Delay</label>
+      <div class="modal__flex">
+        <input class="modal__input modal__input--delay" value="300" type="text" id="flow_delay">
+        <span class="modal__overlay_on_input">ms</span>
+        <input class="modal__checkbox" id="flow_traversable" type="checkbox">
+        <label for="flow_traversable">Traversable</label>
+        <span class="modal__more_info">?</span>
+      </div>
+      <details class="modal__advanced">
+        <summary class="modal__label">ADVANCED SETTINGS</summary>
+        <p class="modal__advanced_desc">Select how this flow should be shown.</p>
+        <div class="modal__radio_container">
+          <input class="modal__hidden" type="radio" name="flow_shown" id="flow_shown_auto">
+          <label class="modal__radio" for="flow_shown_auto">Auto</label>
+          <input class="modal__hidden" type="radio" name="flow_shown" id="flow_shown_url" checked>
+          <label class="modal__radio" for="flow_shown_url">URL</label>
+          <input class="modal__hidden" type="radio" name="flow_shown" id="flow_shown_manual">
+          <label class="modal__radio" for="flow_shown_manual">Manual <span>Advanced</span></label>
+        </div>
+        <div class="modal__select-with-input">
+          <select class="modal__select">
+            <option value="default">Starts with</option>
+          </select>
+          <input class="modal__input" type="text" placeholder="/">
+        </div>
+        <a href="#" class="modal__link">+ Add another</a>
+        <div class="modal__info">This flow will be shown only on the specific page or pages you provide.</div>
+      </details>
+      <div class="modal__actions">
+        <a href="#" class="modal__btn modal__btn--secondary">Cancel</a>
+        <button class="modal__btn modal__btn--primary">Save flow</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

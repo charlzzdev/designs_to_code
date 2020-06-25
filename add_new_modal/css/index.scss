@@ -1,0 +1,222 @@
+/* design source: https://uidesigndaily.com/posts/sketch-add-new-modal-app-form-create-day-1077 */
+
+$bg: #f7f9fd;
+$main: #3457dc;
+$text: #242e4c;
+$text-light: #606b8f;
+$border: #bbbbbb;
+$info-bg: #f7f9fd;
+$link-color: #697ed0;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $bg;
+  color: $text;
+  font-family: Roboto, sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+.modal{
+  width: 30rem;
+  margin: 5rem auto 0 auto;
+  background: #fff;
+  padding: 2rem 5rem 2rem 2rem;
+  border-radius: 6px;
+  position: relative;
+
+  &__close{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: 0;
+    color: $text-light;
+    font-size: 0.6rem;
+    
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &__title{
+    font-size: 1.25rem;
+  }
+
+  &__desc{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: $text-light;
+    margin: 0.75rem 0 2rem 0;
+  }
+
+  &__flex{
+    display: flex;
+    align-items: center;
+  }
+
+  &__label{
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0.25rem 0;
+  }
+
+  &__input{
+    padding: 0.5rem 1rem;
+    border: 1px solid $border;
+    border-radius: 4px;
+    margin: 0.25rem 0;
+
+    &--name{
+      margin-bottom: 0.75rem;
+      width: 100%;
+    }
+
+    &--delay{
+      width: 6rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  &__overlay_on_input{
+    color: $text-light;
+    margin-left: -2rem;
+    margin-right: 3rem;
+    pointer-events: none;
+    font-size: 0.8rem;
+  }
+
+  &__checkbox{
+    transform: scale(1.5);
+    margin-right: 0.75rem;
+  }
+
+  &__more_info{
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid $border;
+    display: inline-block;
+    width: 1rem;
+    color: $text-light;
+    font-size: 0.75rem;
+    text-align: center;
+    cursor: help;
+  }
+  
+  &__advanced{
+    margin: 1rem 0 2rem 0;
+    line-height: 2rem;
+
+    summary{
+      cursor: pointer;
+    }
+  }
+
+  &__advanced_desc{
+    font-size: 0.8rem;
+  }
+
+  &__radio_container{
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  &__radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $text-light;
+    border: 1px solid $border;
+    border-radius: 4px;
+    cursor: pointer;
+
+    span{
+      background: $bg;
+      font-size: 0.75rem;
+      border-radius: 20px;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__hidden:checked + &__radio{
+    border: 2px solid #b0c1ff;
+    background: #f7f9fd;
+    box-shadow: 0 6px 10px #f7f9fd;
+  }
+
+  &__hidden{
+    display: none;
+  }
+
+  &__select-with-input{
+    display: grid;
+    grid-template-columns: 40% calc(60% - 0.5rem);
+    gap: 0.5rem;
+
+    input{
+      margin: 0;
+    }
+  }
+
+  &__select{
+    padding: 0.5rem 1rem;
+    border: 1px solid $border;
+    border-radius: 4px;
+  }
+
+  &__link{
+    color: $link-color;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25rem 0 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  &__info{
+    background: $info-bg;
+    color: $text-light;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    border-radius: 6px;
+  }
+
+  &__actions{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.5rem));
+    gap: 1rem;
+  }
+
+  &__btn{
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    text-align: center;
+
+    &--primary{
+      background: $main;
+      border: 0;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    &--secondary{
+      border: 1px solid $border;
+      text-decoration: none;
+      color: $text-light;
+    }
+  }
+}
