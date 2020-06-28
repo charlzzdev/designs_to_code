@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- design source: https://uidesigndaily.com/posts/sketch-statistics-stats-cards-analytics-list-day-1121 -->
+  <header class="header">
+    <a href="#" class="header__link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#949AB0"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+    </a>
+    <a href="#" class="header__link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#949AB0"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path>
+      </svg>
+    </a>
+    <a href="#" class="header__link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#949AB0"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" />
+        <circle cx="12" cy="10" r="3" />
+        <circle cx="12" cy="12" r="10" />
+      </svg>
+    </a>
+  </header>
+  <nav class="nav">
+    <a href="#" class="nav__link nav__link--active">Home</a>
+    <a href="#" class="nav__link">Audience</a>
+    <a href="#" class="nav__link">Behaviour</a>
+    <a href="#" class="nav__link">Conversions</a>
+    <a href="#" class="nav__link nav__link--right">Customize</a>
+  </nav>
+  <section class="dashboard">
+    <article class="dashboard__block dashboard__block--active_users">
+      <h1 class="dashboard__block--title">Active Users</h1>
+      <h2 class="dashboard__block--number">72</h2>
+      <a href="#" class="dashboard__block--link">VIEW REFERRALS<svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none" stroke="#949AB0" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M5 12h13M12 5l7 7-7 7" /></svg>
+      </a>
+    </article>
+    <article class="dashboard__block dashboard__block--page_views_per_minutes">
+      <h1 class="dashboard__block--title">Page views per minutes</h1>
+      <div class="dashboard__block--graph_placeholder"></div>
+      <a href="#" class="dashboard__block--link">VIEW REFERRALS<svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none" stroke="#949AB0" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M5 12h13M12 5l7 7-7 7" /></svg>
+      </a>
+    </article>
+    <article class="dashboard__block dashboard__block--top_pages">
+      <div>
+        <h1 class="dashboard__block--title">Top pages <span>Visits</span></h1>
+        <div class="dashboard__block--radio dashboard__block--radio_list">
+          <input type="radio" name="visit" id="a">
+          <label for="a">/ <span>23,956</span></label>
+          <input type="radio" name="visit" id="b" checked>
+          <label for="b">/about <span>565</span></label>
+          <input type="radio" name="visit" id="c">
+          <label for="c">/license <span>477</span></label>
+          <input type="radio" name="visit" id="d">
+          <label for="d">/posts/* <span>458</span></label>
+        </div>
+      </div>
+      <div class="dashboard__block--more_stats">
+        <h1 class="dashboard__block--title">More stats
+          <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </h1>
+        <h2 class="dashboard__block--subtitle">More stats</h2>
+        <h3 class="dashboard__block--number">42K</h3>
+        <h2 class="dashboard__block--subtitle">More stats</h2>
+        <h3 class="dashboard__block--number">47.45%</h3>
+      </div>
+    </article>
+    <article class="dashboard__block dashboard__block--users dashboard__block--simple">
+      <h1 class="dashboard__block--title">Users
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#1bc283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V6M5 12l7-7 7 7" /></svg>
+          268%
+        </span>
+      </h1>
+      <h2 clas="dashboard__block--number">15K</h2>
+    </article>
+    <article class="dashboard__block dashboard__block--sessions dashboard__block--simple">
+      <h1 class="dashboard__block--title">Sessions
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#1bc283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V6M5 12l7-7 7 7" /></svg>
+          268%
+        </span>
+      </h1>
+      <h2 clas="dashboard__block--number">17K</h2>
+    </article>
+    <article class="dashboard__block dashboard__block--bounce_rate dashboard__block--simple">
+      <h1 class="dashboard__block--title">Bounce Rate
+        <span class="dashboard__block--red">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#e94e70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V6M5 12l7-7 7 7" /></svg>
+          19.6%
+        </span>
+      </h1>
+      <h2 clas="dashboard__block--number">62.57%</h2>
+    </article>
+    <article class="dashboard__block dashboard__block--session_duration dashboard__block--simple">
+      <h1 class="dashboard__block--title">Session Duration
+        <span class="dashboard__block--red">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#e94e70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v13M5 12l7 7 7-7" /></svg>
+          29.7%
+        </span>
+      </h1>
+      <h2 clas="dashboard__block--number">1m 37s</h2>
+    </article>
+    <article class="dashboard__block dashboard__block--alerts">
+      <div class="dashboard__block--alerts_desc">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#ffd36a"
+          stroke="#ffd36a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        <div>
+          <h1>No alerts set</h1>
+          <p>Get notified when your data drastically changes.</p>
+        </div>
+      </div>
+      <button>Set alert</button>
+    </article>
+    <article class="dashboard__block dashboard__block--device_stats">
+      <h1 class="dashboard__block--title">Devices</h1>
+      <div class="dashboard__block--radio">
+        <input type="radio" name="month" id="may" checked>
+        <label for="may">May</label>
+        <input type="radio" name="month" id="june">
+        <label for="june">June</label>
+        <input type="radio" name="month" id="july">
+        <label for="july">July</label>
+        <input type="radio" name="month" id="august">
+        <label for="august">August</label>
+      </div>
+      <div>
+        <h3 class="dashboard__block--h3">Desktop | 52%</h3>
+        <meter class="dashboard__block--meter" min="0" max="100" value="52"></meter>
+        <h3 class="dashboard__block--h3">Tablet | 15%</h3>
+        <meter class="dashboard__block--meter" min="0" max="100" value="15"></meter>
+        <h3 class="dashboard__block--h3">Mobile | 36%</h3>
+        <meter class="dashboard__block--meter" min="0" max="100" value="36"></meter>
+      </div>
+    </article>
+    <article class="dashboard__block dashboard__block--device_types">
+      <h1 class="dashboard__block--title">Devices
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#1d263f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </h1>
+      <div class="dashboard__block--radio dashboard__block--radio_list">
+        <input type="radio" name="device_type" id="direct">
+        <label for="direct">Direct <span>24</span></label>
+        <input type="radio" name="device_type" id="organic" checked>
+        <label for="organic">Organic <span>14</span></label>
+        <input type="radio" name="device_type" id="social">
+        <label for="social">Social <span>5</span></label>
+        <input type="radio" name="device_type" id="referral">
+        <label for="referral">Referral <span>5</span></label>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>
